@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title>Informe 02</title>
+  <script src="meta/base.js"></script>
+</head>
+
+<body>
+
+  #Resumen
+  El conocimiento de los fenómenos oscilatorios es crucial para comprender situaciones tan comunes como el
+  funcionamiento de un péndulo para medir el tiempo, que se basa en la medición de las oscilaciones. El movimiento de un
+  péndulo, las oscilaciones de un objeto unido a un resorte, las vibraciones de un instrumento musical de cuerdas y, a
+  nivel atómico, las vibraciones de los átomos en un cristal, todos estos sistemas exhiben un comportamiento periódico.
+  En cuanto a las ondas electromagnéticas (ondas de luz, radio, microondas), se generan a partir de la oscilación de los
+  vectores de los campos eléctrico y magnético. En este proyecto, nos enfocaremos en el estudio de una forma sencilla de
+  oscilaciones: el movimiento armónico simple de un sistema masa-resorte, que sirve como punto de partida para la
+  investigación de sistemas vibratorios y todas las formas de movimiento ondulatorio.
+  Pendulo simple.
+  linea:
+  #Introducción
+
+  Para comprender la naturaleza de los fenómenos oscilatorios, es esencial adentrarse en el análisis del caso más
+  elemental: el movimiento armónico simple (MAS) de un sistema compuesto por una masa y un resorte. Este enfoque inicial
+  nos lleva a explorar los diversos factores que influyen en la descripción de las oscilaciones armónicas en este
+  sistema.
+
+  En este proyecto, nos dedicaremos a examinar en detalle el comportamiento del periodo en relación con las variaciones
+  en la masa vinculada al resorte, así como a realizar un análisis de las funciones de constante de elasticidad asociada
+  al sistema, amplitud y
+  periodo. Además, exploraremos el impacto del entorno, evaluando el comportamiento del resorte para determinar el
+  factor de amortiguamiento causado por la resistencia del aire.
+
+  Este enfoque integral nos permitirá no solo comprender la dinámica intrínseca del sistema masa-resorte, sino también
+  considerar las influencias externas que pueden afectar su comportamiento oscilatorio, proporcionando así una visión
+  más completa y aplicada de estos fenómenos.
+  linea:
+  #Metodología
+  El proyecto fue dividido en dos fases principales:
+  ###Fase 1:
+  En esta etapa inicial, se empleó un resorte vertical al cual se le aplicó 7 masas puntuales que variaron en un rango
+  de 5
+  g a 35 g. Además, para cada medición se estableció una amplitud variables. Realizando la medición por medio de
+  software especializado, se registró el período de las oscilaciones armónicas. Con esta informacion se pudo determinar
+  la constante de elasticidad propia del resorte, relacionada directamente con
+  la amplitud y la masa puntual. Ademas de su promedio y margen de error por cada medicion.
+  ###Fase 2:
+  En esta segunda etapa, se utilizó el mismo resorte, aplicando una masa puntual constante de 20 g. Se realizaron tres
+  mediciones con amplitudes diferentes. Posteriormente, se permitió que el sistema oscilara libremente hasta que la
+  energía del sistema se disipara naturalmente debido a las condiciones ambientales. Mediante el uso de software, se
+  monitoreó el cambio en la amplitud en función del tiempo durante este proceso de amortiguamiento. Utilizando los picos
+  positivos como referencia, se registraron cinco tiempos y amplitudes para cada una de las tres amplitudes iniciales
+  establecidas. A partir de estos datos recopilados, se procedió a determinar el factor y la constante de
+  amortiguamiento generados por las condiciones ambientales.
+  linea:
+  #Tratamiento de Datos
+  ###Fase 1:
+  Al sumar el peso adicional al resorte su punto de equilibrio se ve afectado, por lo que es necesario tener esto
+  en cuenta para recalibrar cada medida.
+  img:https://www.iesbajoaragon.com/~fisica/fisica2/MAS/images/Image1046.gif
+  La amplitud fue tomada a apartir de este nuevo punto de equilibrio. Mientras el software de medición se encargó de
+  registar el periodo de las oscilaciones armónicas al dejar que el sistema se moviera libremente.
+  Al realizar este proceso 7 veces, obtuvimos los siguientes resultados:
+  img:https://i.imgur.com/qKNqLqV.png
+  Por la sumatoria de fuerzas sabemos que la fuerza gravitatoria que actua sobre la masa puntal es equivalente a la
+  fuerza elastica que actua sobre el resorte. Consideramos la gravedad una constante igual a 9.81 m/s^2.
+  img:https://i.imgur.com/jCUEKEF.png
+  Al aplicar esta formula pudimos determinar el siguiente valor para K y el porcentaje del margen de error para cada
+  medición:
+  img:https://i.imgur.com/2SxGpl0.png
+  tambien podemos aplicar la formula basada en el periodo y la masa, obtieniendo resultados casi identicos:
+  img:https://i.imgur.com/47C1RkX.png
+
+  Sobre el periodo y su cuadrado, se pudo obtener un valor teorico a partir de las siguientes formulas usando la
+  constante de elasticidad y la masa de cada medicion.
+  img:https://i.imgur.com/elk2eoq.png
+  Los valores obtenidos fueron los siguientes, el periodo teórico, su porcentaje de error y el cuadrado de estos:
+  img:https://i.imgur.com/UZwmSw2.png
+
+  ###Fase 2:
+  Al elegir una masa fija de 20 gramos, realizamos tres mediciones con diferentes amplitudes. Con el apoyo del analisis
+  por medio de software elegimos cinco puntos criticos donde la amplitud llegaba a su maximo positivo despues de algunos
+  cortos periodos de tiempo. Los resultados fueron los siguientes:
+  img:https://i.imgur.com/n2DZ6te.png
+  Con la formula que nos permite determinar la amplitud respecto al tiempo, pudimos reescribirla para determinar el
+  factor de calidad asociado a la masa constante y la varibale "b", que representa la constante ambiental de
+  amortiguamiento.
+  img:https://i.imgur.com/FYB8BCq.png
+  Al aplicar esta formula para las diferentes amplitudes y tiempos obtenemos los siguientes resultados:
+  img:https://i.imgur.com/Qj0rS3r.png
+  Junto sus margenes de error:
+  img:https://i.imgur.com/tPypFTB.png
+  Respecto la variable de amortiguamiento ambiental, la podemos deducir con la siguiente formula:
+  img:https://i.imgur.com/XH3YJ37.png
+  utilizando como factor a el promedio total (0.109) el resultado es:
+  img:https://i.imgur.com/zfm8hpC.png
+  linea:
+  #Analisis de Resultados
+
+  Al poner estos datos obtenidos para la masa y la amplitud en una grafica, podemos representarlo de la siguiente
+  manera:
+  img:https://i.imgur.com/kPaABW7.png
+  Siendo los puntos azules las coordenadas para cada par de valores y la recta roja una funcion f(x) que es igual a el
+  promedio
+  de nuestra constante elastica K (2.847 [N/m]), dividida en la aceleracion gravitatoria (9.81[m/s^2]) y todo esto
+  multiplicado por la variable independiente X. El margen de error se mantiene por debajo de 2.2%, siendo bastante
+  acertado en general para este valor especifico.
+  El Periodo Teorico y Medido tambien mantienen una correlacion bastante cercana, demostrando la eficiencia de las
+  herramientas usadas en este proyecto. Teniendo un margen de error promedio inferior al 2%.
+  Si ponemos este valor junto el Periodo al Cuadrado en un par de graficas contrapuestas con la masa aplicada, se puede
+  conseguir lo siguiente:
+  img:https://i.imgur.com/xlPnhFp.png
+  img:https://i.imgur.com/lTbL4oc.png
+  siendo las curvas rojas aproximaciones que se ajustan al comportamiento de ambas graficas (escribir funciones).
+  Al evaluar los porcentajes de error obtenidos en el factor de amoriguamiento tiende a ser un poco mas alto, estando
+  entre un 4% a 5%, pero aun podemos considerarlo como un margen tolerable.
+  Tomar la formula de la amplitud respecto al tiempo podemos reemplazar el factor por nuestro factor promedio
+  (0.109):
+  img:https://i.imgur.com/S8f9ZRp.png
+  Ajustando la amplitud para los tres casos y evaluando respecto a los valores obtenidos en el laboratorio, podemos
+  crear las sigueintes graficas:
+  img:https://i.imgur.com/8LASpNC.png
+  img:https://i.imgur.com/Mgz0K4W.png
+  img:https://i.imgur.com/5zUTADD.png
+  linea:
+  #Conclusiones
+  * El estudio realizado, aunque mayormente preciso, revela la presencia de márgenes de error que probablemente estén
+  asociados a las condiciones ambientales y posibles imprecisiones en las calibraciones. Estos aspectos deben ser
+  tenidos en cuenta al interpretar los resultados obtenidos.
+
+  * Se ha observado una clara relación entre el período de las oscilaciones, la constante de elasticidad del resorte y
+  la masa puntual utilizada. Esta relación proporciona una comprensión más profunda de cómo estos factores influyen en
+  el comportamiento del sistema masa-resorte y su capacidad para oscilar armónicamente.
+
+  * Los softwares y complementos especializados empleados en la medición de fenómenos como los movimientos armónicos han
+  demostrado ser herramientas altamente intuitivas y útiles. Su utilización ha permitido una mejor comprensión y
+  análisis de los experimentos realizados, facilitando así la interpretación de los datos obtenidos.
+
+  * El factor de amortiguamiento experimentado por un resorte se encuentra definido principalmente por las condiciones
+  ambientales y la masa unida al sistema. Este hallazgo resalta la importancia de considerar el entorno en el diseño y
+  análisis de experimentos relacionados con sistemas oscilatorios, así como la necesidad de comprender cómo estos
+  factores externos influyen en el comportamiento del sistema en estudio.
+  linea:
+  #Bibliografia
+  — [Hecht, 1987] Hecht, E. (1987). Fısica en perspectiva. Addison Wesley Longman 1999.
+  — [Lea and Burke, 1999] Lea, S. and Burke, J. (1999). Fısica: La naturaleza de las cosas, vol 1. International
+  Thomson, M exico.
+
+</body>
+
+</html>
